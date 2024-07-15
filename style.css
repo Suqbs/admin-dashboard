@@ -16,3 +16,29 @@ img, picture, svg, video {
     display: block;
     max-width: 100%;
 }
+
+.container {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 5fr;
+    background-color: aquamarine;
+}
+
+.header {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+    background-color: aqua;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    background-color: bisque;
+}
+
+.main-content {
+    grid-row: 2 / -1;
+    grid-column: 2 / 4;
+    background-color: burlywood;
+}
