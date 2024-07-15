@@ -12,6 +12,7 @@
 
 body {
   min-height: 100vh;
+  background-color: blue;
 }
 
 img,
@@ -23,7 +24,13 @@ video {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.inline-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
 }
 
 .container {
@@ -40,25 +47,57 @@ a {
 }
 
 .sidebar {
+  --small-icon-width: 2rem;
+  --gap: 1rem;
+  --color: white;
   grid-row: 1 / -1;
   grid-column: 1 / 2;
-  background-color: bisque;
+  background-image: linear-gradient(to right, #00b09b, #96c93d);
   display: grid;
   grid-template-rows: min-content 1fr 1fr;
   grid-template-columns: 1fr;
   gap: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--color);
+}
+
+.sidebar a {
+  color: var(--color);
 }
 
 .sidebar-header {
-    background-color: beige;
+  font-size: 2rem;
+  flex-wrap: wrap;
 }
 
 .sidebar-content {
-    background-color: beige;
+  display: grid;
+  grid-template-rows: repeat(6, min-content);
+  gap: var(--gap);
 }
 
 .sidebar-essential {
-    background-color: beige;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+}
+
+.sidebar-content,
+.sidebar-essential {
+  min-width: max-content;
+  gap: var(--gap);
+}
+
+.sidebar-header > img {
+  width: 4rem;
+}
+
+.sidebar-content-child > img,
+.sidebar-essential-child > img {
+  width: var(--small-icon-width);
+  fill: url();
 }
 
 .main-content {
@@ -71,9 +110,9 @@ a {
 }
 
 .article {
-    grid-row: 1;
+  grid-row: 1;
 }
 
 .main-content-info {
-    grid-row: 2;
+  grid-row: 2;
 }
