@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: sans-serif, Helvetica, Arial, Roboto, system-ui, "Segoe UI",   
+  font-family: sans-serif, Helvetica, Arial, Roboto, system-ui, "Segoe UI",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -223,8 +223,17 @@ span.magnify::after {
   padding-bottom: 4rem;
 }
 
+/* kartların main-content'in boyunu almasını istiyorsan bunu etkinleştir
+ama boyu uzuyor işte sana kalmış */
 .article {
   display: grid;
+  grid-template-rows: min-content 1fr;
+  gap: 0.6rem;
+}
+
+.card-section-title {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .card-section {
@@ -236,9 +245,9 @@ span.magnify::after {
 .card {
   background-color: white;
   border-radius: 10px;
-  background: 
-  linear-gradient(to right, #f0b429, #f0b429) left/7px 100% no-repeat,
-  white;
+  background: linear-gradient(to right, #f0b429, #f0b429) left/7px 100%
+      no-repeat,
+    white;
   padding: 2rem 1rem;
 }
 
