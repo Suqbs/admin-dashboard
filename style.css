@@ -248,7 +248,30 @@ ama boyu uzuyor işte sana kalmış */
   background: linear-gradient(to right, #f0b429, #f0b429) left/7px 100%
       no-repeat,
     white;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.card > .title {
+  font-weight: bold;
+}
+
+.card > .title + p {
+  color: #636363;
+}
+
+.card-interaction-section {
+  display: flex;
+  column-gap: 1.2rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+}
+
+.card-interaction-section img {
+  width: 1.8rem;
 }
 
 .main-content-info {
@@ -261,7 +284,7 @@ ama boyu uzuyor işte sana kalmış */
   column-gap: 1.5rem;
 }
 
-/* This button from a getcssscan and it is a button from by Stripe */
+/* This button from a getcssscan and it is a button by Stripe */
 .header-bottom-button-section > button {
   appearance: button;
   backface-visibility: hidden;
