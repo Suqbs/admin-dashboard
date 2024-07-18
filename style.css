@@ -27,6 +27,13 @@ a {
   text-decoration: none;
 }
 
+.hr {
+  border-top: 1px solid #d2d2d2;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
 .inline-icon {
   display: flex;
   align-items: center;
@@ -67,7 +74,7 @@ a {
   grid-column: 2 / -1;
   background-color: white;
   padding-top: var(--header-top-padding);
-  padding-right: 3rem;
+  padding-right: 2rem;
   padding-bottom: 1rem;
   display: grid;
   grid-template-rows: min-content min-content;
@@ -218,20 +225,52 @@ span.magnify::after {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
-  padding-left: 1.2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 4rem;
+  padding: 1.5rem 2rem 4rem 1.2rem;
+  column-gap: 2rem;
 }
 
-/* kartların main-content'in boyunu almasını istiyorsan bunu etkinleştir
-ama boyu uzuyor işte sana kalmış */
 .article {
   display: grid;
+  grid-column: 1;
   grid-template-rows: min-content 1fr;
   gap: 0.6rem;
 }
 
-.card-section-title {
+.main-content-info {
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  row-gap: 2rem;
+}
+
+.announcements {
+  grid-row: 1;
+  gap: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.announcements .card {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.bold-title-small + p {
+  color: #636363;
+}
+
+.bold-title-small {
+  font-weight: bold;
+}
+
+.trending {
+  grid-row: 2;
+}
+
+.bold-title {
   font-weight: bold;
   font-size: 1.3rem;
 }
@@ -245,12 +284,15 @@ ama boyu uzuyor işte sana kalmış */
 .card {
   background-color: white;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article .card {
   background: linear-gradient(to right, #f0b429, #f0b429) left/7px 100%
       no-repeat,
     white;
   padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
   gap: 0.3rem;
 }
 
@@ -272,10 +314,6 @@ ama boyu uzuyor işte sana kalmış */
 
 .card-interaction-section img {
   width: 1.8rem;
-}
-
-.main-content-info {
-  grid-row: 2;
 }
 
 .header-bottom-button-section {
