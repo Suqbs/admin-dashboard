@@ -285,6 +285,7 @@ span.magnify::after {
   flex-direction: column;
   justify-content: space-evenly;
 
+  /*Border animation by Jesse B*/
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -333,6 +334,8 @@ span.magnify::after {
 		opacity: .5;
 	}
 }
+
+/*Border animation by Jesse B ends here.*/
 
 .trending-person {
   display: flex;
