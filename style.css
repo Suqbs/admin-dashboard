@@ -10,6 +10,11 @@
   font: inherit;
 }
 
+body {
+  font-family: sans-serif, Helvetica, Arial, Roboto, system-ui, "Segoe UI",   
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 img,
 picture,
 svg,
@@ -168,7 +173,7 @@ span.magnify::after {
   font-weight: bold;
   font-size: 1.2rem;
   color: var(--color);
-  box-shadow: 0px 25px 25px -35px rgba(0,0,0,0.45);
+  box-shadow: 0px 25px 25px -35px rgba(0, 0, 0, 0.45);
 }
 
 .sidebar a {
