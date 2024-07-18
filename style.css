@@ -214,14 +214,32 @@ span.magnify::after {
 .main-content {
   grid-row: 3 / -1;
   grid-column: 2 / 4;
-  background-color: burlywood;
+  background-color: #e2e8f0;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
+  padding-left: 1.2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
 }
 
 .article {
-  grid-row: 1;
+  display: grid;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  background: 
+  linear-gradient(to right, #f0b429, #f0b429) left/7px 100% no-repeat,
+  white;
+  padding: 2rem 1rem;
 }
 
 .main-content-info {
