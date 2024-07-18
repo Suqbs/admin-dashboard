@@ -81,6 +81,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-left: 2.5rem;
+  gap: 1rem;
 }
 
 .header-bottom img {
@@ -108,7 +109,8 @@ a {
   align-items: center;
 }
 
-.header-info-section, .header-input-section {
+.header-info-section,
+.header-input-section {
   align-self: center;
 }
 
@@ -118,7 +120,7 @@ a {
 }
 
 input.search-bar {
-  width: clamp(30ch, 100%,70ch);
+  width: clamp(30ch, 100%, 70ch);
   height: 1.5rem;
   background-color: #e2e8f0;
   border: 1px solid #e5e7eb;
@@ -155,7 +157,8 @@ span.magnify::after {
   --color: white;
   grid-row: 1 / -1;
   grid-column: 1 / 2;
-  background-image: linear-gradient(to right, #00b09b, #96c93d);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   display: grid;
   grid-template-rows: min-content min-content min-content;
   gap: 3rem;
@@ -165,6 +168,7 @@ span.magnify::after {
   font-weight: bold;
   font-size: 1.2rem;
   color: var(--color);
+  box-shadow: 0px 25px 25px -35px rgba(0,0,0,0.45);
 }
 
 .sidebar a {
@@ -229,13 +233,15 @@ span.magnify::after {
 .header-bottom-button-section > button {
   appearance: button;
   backface-visibility: hidden;
-  background-color: #405cf5;
+  background-color: #0093e9;
   border-radius: 6px;
   border-width: 0;
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
   color: #fff;
   cursor: pointer;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Ubuntu, sans-serif;
   height: 3rem;
   line-height: 1.15;
   margin: 0.8rem 0 0;
@@ -246,7 +252,7 @@ span.magnify::after {
   text-align: center;
   text-transform: none;
   transform: translateZ(0);
-  transition: all .2s,box-shadow .08s ease-in;
+  transition: all 0.2s, box-shadow 0.08s ease-in;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -259,5 +265,7 @@ span.magnify::after {
 }
 
 .header-bottom button:focus {
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }
